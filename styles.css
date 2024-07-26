@@ -1,0 +1,605 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root{
+    --nav-color:#010003;
+    --primary-color:#002147;
+    --secondary-color:#5AB8B3;
+    --linear-color:linear-gradient(to right ,#002147,#5AB8B3);
+    --font-style:@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    --padding-small:8px;
+}
+
+.textColorWhite{
+    color: #fff !important;
+}
+
+.textLeft{
+    text-align: left;
+
+height: 20px;
+
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+
+color: #002147;
+
+
+}
+
+.textRight{
+    text-align: right;
+}
+/* nav */
+.navbar{
+    background-color: var(--primary-color) !important; 
+
+}
+
+.navbar ul li{
+    margin-right: var(--padding-small);
+    margin-left: var(--padding-small);
+}
+
+.navbar-toggler {
+    border-color: var(--primary-color) !important; /* Optional: changes the border color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 123, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    /* Change rgba(0, 123, 255, 1) to your desired color */
+}
+/* endNav */
+
+/* landingSection */
+.landing-section{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 600px;
+}
+
+.landing-section button{
+    color: var(--primary-color);
+    background-color: #fff;
+    width: 164.66px;
+    height: 52px;
+    font-family: var(--font-style);
+    font-weight: bold;
+}
+
+.landing-section button:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+    width: 164.66px;
+    height: 52px;
+    font-family: var(--font-style);
+    font-weight: bold;
+    background-color: var(--secondary-color);
+}
+
+.landingRaisedMonyAmount{
+    background-color: var(--secondary-color);
+width: 670px !important;
+height: 193px;
+background: #5AB8B3;
+border-radius: 10px 10px 10px 10px;
+
+}
+
+
+@media (max-width:992px) {
+    .landingRaisedMonyAmount{
+        background-color: var(--secondary-color);
+    width: 350px !important;
+    height: 193px;
+    background: #5AB8B3;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
+    margin-top: -40px !important;
+    }
+}
+
+
+.landingRaisedMonyAmount span h4{
+    color: #fff !important;
+    font-weight: light;
+
+}
+
+.landingRaisedMonyAmount span h1{
+    font-weight: bolder;
+}
+
+
+
+.sectionOneColTwo img{
+        max-width: 90%;
+        height: 586px !important;
+        object-fit: cover;
+        border-bottom-right-radius: 20px;   
+} 
+
+
+
+/* supportArtFund Section */
+.supportArtFund{
+    background-color: #F4F1EF;
+    max-width: 1350px;
+    min-height: 700px;
+    border: 10px;
+    position: relative;
+    right: 80px;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    flex-wrap: wrap;
+}
+
+.numberP{
+    /* 01 */
+max-width: 36px;
+max-height: 45px;
+font-family: 'Cairo';
+font-style: normal;
+font-weight: bolder;
+font-size: 3rem;
+line-height: 140%; 
+ color: #5AB8B3; 
+}
+
+.flexNum{
+    display: flex;
+    gap: 20px;
+}
+
+.DonationFrequnecy{
+    max-width: 5000px;
+    max-height:5000px ;
+    background-color: #fff !important;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 0px #000000;
+    min-width: 200px;
+}
+
+.DonationFrequnecy .contentDev{
+   padding: 20px;
+   padding-left: 50px;
+
+}
+.donateRadio{
+    margin-top: 10px;
+    max-width: 5000px;
+    max-height: 5000px;
+    min-width: 100px;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+
+.selected-bg {
+    background-color:var(--primary-color); 
+    color: white;/* Light grey background */
+  }
+
+  .donationAmmountBtnGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .donationAmountBtn{ 
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+  }
+
+  .donationAmountBtn::selection{
+    background-color: var(--secondary-color);
+  }
+
+  .donateBtn{
+    background-color: #002147;
+    color: #fff;
+    border: none;
+  }
+
+  .donateBtn:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+  .selected-btn {
+    background-color: var(--primary-color); /* Example: green background */
+    color: white; /* White text for better contrast */
+  }
+
+  .DonateLogos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .underDonationImg{
+    display: inline;
+    z-index: -1;
+    position: absolute;
+    right: 20px;
+    top: 800px;
+    min-height: 800px;
+    max-height: 2000px;
+  }
+
+  /* Our Impact section */
+
+  .ourImpact{
+    /* Our Impact by the Numbers */
+    width: 540px;
+    height: 176px; /* Adjust if needed */
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px; /* Adjusted from 85px to fit better */
+    line-height: 100px; /* Adjusted for better fit */
+    letter-spacing: -0.02em;
+    color: var(--linear-color);
+    background: linear-gradient(89.97deg, #002147 1.84%, #5AB8B3 102.67%, #3E4581); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroImg{
+    min-width: 300px;
+
+}
+  
+/* openDonationContainer */
+
+
+.openDonationContainer{
+
+    text-align: center;
+}
+.openDonationTitle{
+    /* Open donations */
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700; 
+font-size: 32px;
+line-height: 140%;
+/* identical to box height, or 45px */
+color: var(--primary-color);
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.openDonationSearch{
+    justify-content: center;
+    align-items: center;
+
+padding: 20px 32px;
+background: #F3F8F7;
+box-shadow: 0px 4px 4px rgba(130, 134, 157, 0.08);
+border-radius: 60px;
+border: none;
+
+/* Frame 46 */
+max-width: 800px;
+height: 64px;
+}
+
+.buttonsRow{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.buttonsRow .btn{
+    width: max-content;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+}
+.buttonsRow .btn:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.donationCards{
+
+    padding-left: 90px !important;
+   
+}
+.donationCardTitle{
+    align-items: start;
+    text-align: left;
+}
+
+.donatioCardBtn{
+box-sizing: border-box;
+/* Auto layout */
+justify-content: center;
+align-items: center;
+padding: 12px 80px;
+gap: 10px;
+width: 250px;
+height: 42px;
+background: #FFFFFF;
+border: 1px solid #002147;
+border-radius: 4px;
+}
+.donatioCardBtn:hover{
+    background-color: var(--secondary-color);
+}
+
+.donationCardText{
+    text-align: left;
+}
+
+.tagBtn{
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    border: none;
+    background: #FFFFFF;
+    border: 1px solid #002147;
+    border-radius: 4px;
+    gap: 10px;
+    bottom: 2px;
+    position: relative;
+}
+
+.phoneHead{
+    padding-left: 60px;
+}
+.phoneH6{
+    /* MODERN CROWDFUNDING PLATFORM */
+width: max-content;
+height: 18px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.05em;
+color: #57F8D2;
+}
+
+.phoneHeadP{
+    /* Deliver aid effortlessly, swiftly, and with complete transparency. */
+width: max-content;
+height: max-content;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 140%;
+/* or 45px */
+color: #002147;
+
+}
+
+.missionHeaderP{
+    /* HUMANITARIAN MISSION */
+min-width: 176px;
+height: 18px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.05em;
+color: #5C6574;
+}
+
+.missionHeaderH2{
+    /* Assisting artists in building their businesses and developing their artistic projects. We are here to support creativity and contribute to realizing their artistic visions. */
+width: 430px;
+height: 170px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 140%;
+/* or 34px */
+color: #0F111D;
+}
+
+.missionIneerP span{
+    /* 22,690 Donations have been verified and still active. */
+width: 274px;
+height: 60px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 165%;
+/* or 30px */
+color: #002147;
+}
+
+
+.ourPaternsP{
+    /* OUR PARTNERS */
+min-width: 109px;
+height: 18px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.05em;
+color: #5C6574;
+}
+.ourPaternrsH1{
+/* More than 50 Companies and Institutions that trust us over the years */
+width: 960px;
+height: 90px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 140%;
+/* or 45px */
+color: #0F111D;
+
+}
+
+.partenersLogos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: min-content;
+}
+
+.partner {
+    background: #FCFFFE;
+    box-shadow: 0px 0px 0px 1px rgba(51, 68, 99, 0.06);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+@media (max-width: 1200px) {
+    .partners-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .partners-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+
+.partner.span-two-rows {
+    grid-row: span 2;
+}
+
+.partner.more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    color: #0F111D;
+}
+
+.contactImg{
+    width: 1300px;
+}
+
+.footerLeftSide{
+    background-color: #5AEBC8;
+   
+}
+
+.leftClassContant{
+    display: flex;
+    justify-content: space-between;
+    height: min-content;
+    flex-wrap: wrap;
+ 
+}
+
+.leftClassContant p{
+
+font-family: 'Cairo';
+font-weight: lighter !important;
+font-size: 16px !important;
+
+color: #776a6a !important;
+}
+
+.footerLeftSide p{
+    /* Feed your genetic habit with this seminal press release We send it monthly via email. Get the latest museum news Throughout the UK, his fundraising initiatives Art box, special offers. */
+min-width:min-content;
+min-height: min-content;
+
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+
+color: #000000;
+}
+
+
+.footerRightSide{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.aboutFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.aboutFooter a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socialIcons{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.footerLogo{
+    width: min-content;
+}
