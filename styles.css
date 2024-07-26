@@ -323,7 +323,7 @@ height: 64px;
 }
 
 .donationCards{
-    padding-left: 60px !important;
+  
 }
 .donationCardTitle{
     align-items: start;
@@ -530,7 +530,7 @@ color: #0F111D;
     .partners-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin-left: 150px;
+       
     }
 }
 
